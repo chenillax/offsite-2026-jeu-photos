@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+/* ---------------------------------------------------------------------------
+   THÈME « Le Soleil » — soleil rétro 70s, repris du site de mariage.
+   Rayons orange vif + orange doré sur fond crème, accents terracotta.
+   En Tailwind v4, ces couleurs deviennent des classes : bg-cream, text-brown,
+   bg-amber, border-sand, text-terracotta, etc.
+--------------------------------------------------------------------------- */
+@theme {
+  --color-cream: #faf1e1; /* fond principal, crème chaud */
+  --color-sand: #f4e7d2; /* fond secondaire / cartes */
+  --color-amber: #f2941c; /* accent soleil — orange vif (boutons) */
+  --color-amber-dark: #e0640f; /* orange profond (hover / rayons foncés) */
+  --color-terracotta: #c95e38; /* accent + titres (couleur "Le Soleil") */
+  --color-brown: #3a2a1e; /* texte principal */
+  --color-brown-soft: #7a5c45; /* texte secondaire */
+  --color-sage: #8a8a4e; /* succès / défi validé (olive doux) */
+
+  --font-serif: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+html,
+body {
+  background-color: var(--color-cream);
+  color: var(--color-brown);
+}
+
+body {
+  font-family: var(--font-sans);
+  /* Halo lumineux "soleil" en haut de page, façon rayons. */
+  background-image: radial-gradient(
+    130% 80% at 50% -20%,
+    rgba(242, 148, 28, 0.28) 0%,
+    rgba(242, 148, 28, 0.08) 38%,
+    rgba(242, 148, 28, 0) 62%
+  );
+  background-attachment: fixed;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  font-weight: 600;
+}
+
+/* Le grand titre reprend le terracotta du logo "Le Soleil". */
+h1 {
+  color: var(--color-terracotta);
+}

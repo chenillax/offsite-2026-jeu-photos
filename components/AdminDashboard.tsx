@@ -1,6 +1,6 @@
 "use client";
 
-// Tableau de validation des photos pour Camille.
+// Tableau de validation des photos pour Camille. 
 // Elle voit toutes les photos (filtre "à valider" par défaut) et clique
 // Valider / Refuser. Mise à jour en temps réel.
 import { useCallback, useEffect, useMemo, useState } from "react";

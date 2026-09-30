@@ -54,7 +54,7 @@ export default function GuestPicker({
   }
 
   const filtered = guests.filter((g) =>
-    g.name.toLowerCase().includes(search.toLowerCase())
+    g.name.toLowerCase().includes(search.toLowerCase()),
   );
 
   return (
@@ -62,11 +62,9 @@ export default function GuestPicker({
       <header className="mb-8 text-center">
         <p className="text-4xl">☀️</p>
         <h1 className="mt-2 text-3xl font-semibold text-terracotta">
-          Le jeu du Voyage 2026
+          Challenge Photo{" "}
         </h1>
-        <p className="mt-2 text-brown-soft">
-          Qui es-tu ? Choisis ton nom pour commencer.
-        </p>
+        <p className="mt-2 text-brown-soft">Dans quelle équipe es-tu ?</p>
       </header>
 
       {error && (
@@ -78,7 +76,7 @@ export default function GuestPicker({
       <input
         type="text"
         inputMode="search"
-        placeholder="Cherche ton nom…"
+        placeholder="Cherche ta couleur"
         value={search}
         onChange={(e) => setSearch(e.target.value)}
         className="mb-4 w-full rounded-2xl border border-sand bg-white px-4 py-3 text-brown outline-none focus:border-amber"

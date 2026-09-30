@@ -4,10 +4,26 @@
 // un bouton « C'est parti ! » mène à la sélection du nom.
 export default function Welcome({ onStart }: { onStart: () => void }) {
   const rules = [
-    { icon: "📝", text: "Choisis ton prénom dans la liste pour rejoindre le jeu." },
-    { icon: "🎯", text: "Réalise au moins 5 défis sur 7 en prenant les photos demandées." },
-    { icon: "🎁", text: "Les 3 plus rapides à valider leurs 5 défis gagnent un prix !" },
-    { icon: "🏆", text: "Suis le classement et le mur de photos en direct." },
+    {
+      icon: "📝",
+      text: "Choisis ton équipe dans la liste pour rejoindre le jeu.",
+    },
+    {
+      icon: "🎯",
+      text: "Réalise au moins 5 défis sur 7 en prenant les photos demandées.",
+    },
+    {
+      icon: "⚠️",
+      text: "Il faut au moins 4 membres de l'équipe sur la photo, pour qu'elle soit validée.",
+    },
+    {
+      icon: "🎁",
+      text: "Les 5 équipes les plus rapides à valider leurs 5 défis remportent des points supplémentaires !",
+    },
+    {
+      icon: "🏆",
+      text: "Suis le classement des photos et le mur de photos en direct.",
+    },
   ];
 
   return (
@@ -15,11 +31,11 @@ export default function Welcome({ onStart }: { onStart: () => void }) {
       <header className="mb-8 text-center">
         <p className="text-5xl">☀️</p>
         <h1 className="mt-3 text-3xl font-semibold text-terracotta">
-          Le jeu du Voyage 2026
+          Challenge Photo
         </h1>
         <p className="mt-3 text-brown-soft">
-          Bienvenue ! Pendant la soirée, relève les défis photo : réalises-en au
-          moins 5 sur 7 le plus vite possible.
+          Bienvenue ! Jusqu&apos;à samedi soir, relèvez les défis photo :
+          réalisez-en au moins 5 sur 7 le plus vite possible.
         </p>
       </header>
 

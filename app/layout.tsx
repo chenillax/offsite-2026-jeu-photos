@@ -19,10 +19,10 @@ export const metadata: Metadata = {
   // URL publique de base : sert à rendre l'image d'aperçu (Open Graph) en URL
   // absolue accessible par WhatsApp/iMessage, et non en localhost.
   metadataBase: new URL("https://bingo-challenge-voeux-solaire.vercel.app"),
-  title: "Le jeu du Voyage 2026",
+  title: "Challenge Photo",
   description: "Le jeu des invités du mariage ☀️",
   openGraph: {
-    title: "Le jeu du Voyage 2026",
+    title: "Challenge Photo",
     description: "Le jeu des invités du mariage ☀️",
     type: "website",
   },

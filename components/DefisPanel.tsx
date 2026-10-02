@@ -104,7 +104,7 @@ export default function DefisPanel({
       {/* Progression : objectif = 5 défis sur 7 */}
       <div className="rounded-2xl border border-sand bg-white p-4 shadow-sm">
         <div className="flex items-center justify-between">
-          <span className="font-semibold text-brown">Ta progression</span>
+          <span className="font-semibold text-brown">La progression de l'équipe</span>
           <span className="text-amber-dark">
             {doneTowardGoal} / {required}
           </span>

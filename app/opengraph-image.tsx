@@ -3,7 +3,7 @@ import { ImageResponse } from "next/og";
 // Image d'aperçu affichée par WhatsApp, iMessage, Facebook, etc. (Open Graph).
 // Générée en PNG par Next.js. Le soleil est dessiné en divs (pas de police
 // nécessaire) : fond crème, rayons terracotta, cœur orange.
-export const alt = "Le jeu du Voyage 2026";
+export const alt = "Challenge Photo";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 

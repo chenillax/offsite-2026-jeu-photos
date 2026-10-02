@@ -10,7 +10,7 @@ export default function Welcome({ onStart }: { onStart: () => void }) {
     },
     {
       icon: "🎯",
-      text: "Réalise au moins 5 défis sur 7 en prenant les photos demandées.",
+      text: "Réalise au moins 7 défis sur 11 en prenant les photos demandées.",
     },
     {
       icon: "⚠️",
@@ -29,7 +29,7 @@ export default function Welcome({ onStart }: { onStart: () => void }) {
   return (
     <main className="mx-auto flex min-h-dvh w-full max-w-md flex-col px-6 py-10">
       <header className="mb-8 text-center">
-        <p className="text-5xl">☀️</p>
+        <p className="text-5xl"><📸/p>
         <h1 className="mt-3 text-3xl font-semibold text-terracotta">
           Challenge Photo
         </h1>
